@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    android:gravity="end|bottom"
+    tools:context=".MainActivity">
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:background="@null"
+        app:fabSize="normal"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/phone"
+        android:backgroundTint="#000000"
+        android:visibility="invisible"
+        android:layout_marginBottom="20dp"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_alignParentRight="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        android:background="@null"
+        android:layout_below="@id/fab1"
+        app:srcCompat="@drawable/add"
+        android:layout_alignParentEnd="true"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
